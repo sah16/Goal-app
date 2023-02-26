@@ -17,7 +17,7 @@ a {
 }
 
 p {
-  line-height: 1.7; 
+  line-height: 1.7;
 }
 
 ul {
@@ -157,7 +157,7 @@ h3 {
 
 .btn-reverse {
   background: #fff;
-  color: #480261;
+  color: #000;
 }
 
 .btn-block {
