@@ -2,10 +2,9 @@ import {useState, useEffect} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import {toast}from 'react-toastify'
-import {faUser} from 'react-icons/fa'
-import { register, reset
- } from '../features/auth/authSlice'
- import Spinner from '../app/components/Spinner'
+import { FaUser } from 'react-icons/fa'
+import { register, reset} from '../features/auth/authSlice'
+ import Spinner from '../components/Spinner'
 
 function Register() {
   const [formData , setFormData] = useState({
@@ -56,7 +55,7 @@ function Register() {
         password,
       }
 
-      dispatch(register(user.data))
+      dispatch(register(userData))
     }
   }
 
@@ -67,7 +66,7 @@ function Register() {
     <>
     <section className="heading">
       <h1>
-        <faUser/> Register
+        <FaUser/> Register
       </h1>
       <p>Please create an account</p>
     </section>
